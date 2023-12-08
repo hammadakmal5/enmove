@@ -1,0 +1,65 @@
+<!-- head -->
+<%- include('partials/head'); %>
+<!-- navbar -->
+<%- include('partials/navbar'); %>
+<!-- Main Section -->
+
+<main>
+  <form class="row g-3 form-container">
+    <h2 class="text-center">
+      user_name, your account has been created!. What brings you to Enmove?
+    </h2>
+    <p class="text-center fw-semibold">We want to tailor your experience</p>
+    <div class="d-flex justify-content-center gap-3">
+      <div class="border rounded p-5">
+        <div class="text-center">
+          <img src="images/localSupport.png" alt="" class="img-thumbnail" />
+        </div>
+        <div class="mt-5">
+          <input
+            class="form-check-input fs-4"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            checked
+          />
+          <label class="form-check-label fs-5" for="flexCheckDefault">
+            Local Support
+          </label>
+        </div>
+      </div>
+
+      <div class="border rounded p-5">
+        <div class="text-center">
+          <img
+            src="images/internationalSupport.png"
+            alt=""
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="mt-5">
+          <input
+            class="form-check-input fs-4"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+          <label class="form-check-label fs-5" for="flexCheckChecked">
+            International Support
+          </label>
+        </div>
+      </div>
+    </div>
+    <a
+      href="travel-assistance-overview.html"
+      type="submit"
+      class="d-flex justify-content-center btn btn-primary"
+    >
+      Continue →
+    </a>
+  </form>
+</main>
+
+<!-- Footer Section -->
+
+<%- include('partials/footer'); %>

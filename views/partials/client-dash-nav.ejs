@@ -1,0 +1,80 @@
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/images/enmove.png"
+          alt="Enmove Logo"
+          width="150px"
+          height="auto"
+          class="img-fluid"
+        />
+      </a>
+      <div class="nav-wrapper">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" aria-current="page" href="/home"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="">Travel Assistants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="">Destinations</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Profile Dropdown -->
+
+      <div class="dropdown mx-auto">
+        <a
+          href="#"
+          class="d-flex align-items-center text-black text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://github.com/mdo.png"
+            alt=""
+            width="32"
+            height="32"
+            class="rounded-circle me-2"
+          />
+          <strong>abc</strong>
+        </a>
+        <form action="/client/signout" method="POST">
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <button class="dropdown-item" type="submit">Sign out</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />

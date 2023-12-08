@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9533aca706.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Seller Profile</title>
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <%- include('partials/assistant-dash-nav'); %>
+
+    <!-- Main Section -->
+    <main class="" style="background-color: #f5f5f5bf">
+      <!-- Profile card and Active order -->
+      <div class="d-flex justify-content-start py-5">
+        <div class="card ms-4" style="width: 15rem">
+          <div class="card-header">
+            <a href="" class="px-2 link-underline-light">
+              <img src="images/user.png" alt="" />
+              <span class="px-4">username</span>
+            </a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border border-1 opacity-50">
+              Inbox response rate
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Example with label"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 25%">0%</div>
+              </div>
+            </li>
+            <li class="list-group-item border border-1 opacity-50">
+              Inbox response time
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Example with label"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 100%">100%</div>
+              </div>
+            </li>
+            <li class="list-group-item border border-1 opacity-50">
+              Bookings completion
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Example with label"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 50%">0%</div>
+              </div>
+            </li>
+
+            <li class="list-group-item border border-1 opacity-50">
+              Earned in Month <span class="ps-4">$100</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Active orders -->
+        <div class="ms-5 mt-5 w-75">
+
+          <div>
+            <h2>Welcome, <span>username</span></h2>
+            <p>Find important booking here</p>
+          </div>
+          <div
+            id="navbar-example2"
+            class="navbar px-3 mb-3"
+            style="background-color: #fff"
+          >
+            <a class="navbar-brand" href="#">Active Bookings</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Active Bookings (1)</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#scrollspyHeading3"
+                      >Booking 1</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message chatbox -->
+
+      <!-- <div class="container">
+        <h3 class=" text-center">Inbox</h3>
+        <div class="messaging">
+              <div class="inbox_msg border rounded">
+                <div class="inbox_people">
+                  <div class="headind_srch">
+                    <div class="recent_heading">
+                      <h4>Recent</h4>
+                    </div>
+                    <div class="srch_bar">
+                      <div class="stylish-input-group">
+                        <input type="text" class="search-bar"  placeholder="Search" >
+                        <span class="input-group-addon">
+                        <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                        </span> </div>
+                    </div>
+                  </div>
+                  <div class="inbox_chat">
+                    <div class="chat_list active_chat">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Hammad Akmal <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mesgs">
+                  <div class="msg_history">
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>Test which is a new approach to have all
+                            solutions</p>
+                          <span class="time_date"> 11:01 AM    |    June 9</span></div>
+                      </div>
+                    </div>
+                    <div class="outgoing_msg">
+                      <div class="sent_msg">
+                        <p>Test which is a new approach to have all
+                          solutions</p>
+                        <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+                    </div>
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>Test, which is a new approach to have</p>
+                          <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+                      </div>
+                    </div>
+                    <div class="outgoing_msg">
+                      <div class="sent_msg">
+                        <p>Apollo University, Sialkot, Pakistan Test</p>
+                        <span class="time_date"> 11:01 AM    |    Today</span> </div>
+                    </div>
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>We work directly with our designers and suppliers,
+                            and sell direct to you, which means quality, exclusive
+                            products, at a price anyone can afford.</p>
+                          <span class="time_date"> 11:01 AM    |    Today</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type_msg">
+                    <div class="input_msg_write">
+                      <input type="text" class="write_msg" placeholder="Type a message" />
+                      <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    </main>
+
+    <!-- chat -->
+
+
+    <!-- Footer Section -->
+    <%- include('partials/footer'); %>
+
+    

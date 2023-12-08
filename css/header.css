@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-link-color {
+    color: #001c64;
+    font-weight: 400;
+    font-size: 1.125rem;
+}

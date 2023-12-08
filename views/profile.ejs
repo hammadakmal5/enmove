@@ -1,0 +1,49 @@
+<!-- head -->
+<%- include('partials/head'); %>
+<!-- navbar -->
+<%- include('partials/navbar'); %>
+
+<!-- main content -->
+
+<main>
+  <section
+    id="get-started"
+    class="border border-light-subtle rounded w-50 d-flex justify-content-center m-auto"
+  >
+    <div class="p-5">
+      <a href="/home" class="text-center"
+        ><i class="fa-solid fa-arrow-left-long" style="color: #000000">
+          Back</i
+        ></a
+      >
+      <p class="py-4 fs-3"><strong>Get your profile started</strong></p>
+
+      <p>
+        Add a username that unique to you, this is how you will appear to
+        others.<strong>
+          You can't change your username, so choose wisely.</strong
+        >
+      </p>
+
+      <form action="">
+        <label for="username" class="form-label">Choose a username</label><br />
+        <input
+          class="form-control-sm w-100"
+          type="text"
+          name="username"
+          id="username"
+        />
+        <p class="py-2">Build trust by adding your full name</p>
+
+        <div class="d-flex justify-content-center">
+          <a href="support.html" type="submit" class="btn btn-primary"
+            >Continue</a
+          >
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<%- include('partials/footer'); %>

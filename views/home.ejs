@@ -1,0 +1,266 @@
+<!-- head section-->
+<%- include('partials/head'); %>
+<!-- navbar section -->
+<%- include('partials/navbar'); %>
+<!-- hero section-->
+<%- include('partials/hero'); %>
+
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />
+
+<!-- Services Overview section-->
+<section class="container py-5" id="services">
+  <h2 class="text-center mb-4 fw-bold">Our Services</h2>
+  <div
+    class="d-flex justify-content-around row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+  >
+    <!-- Service 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="/images/service1.jpg"
+          class="card-img-top"
+          alt="Service 1 Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Care at the point of destination</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            mollitia labore, autem nihil in accusantium!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="/images/service2.jpg"
+          class="card-img-top"
+          alt="Service 2 Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Enhancing Recovery with Companion care</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+            voluptates? Nisi quisquam nemo nulla?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />
+<!-- Testimonials section -->
+
+<section class="container py-5" id="testimonials">
+  <h2 class="text-center mb-4 fw-bold">What Our Users Say</h2>
+  <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Testimonial 1 -->
+      <div class="carousel-item active">
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-text">
+              "Enmove made our trip so much smoother. The travel assistant was
+              not only caring but also knowledgeable about the local
+              attractions. Highly recommended!"
+            </p>
+            <h5 class="card-title">John Doe</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="carousel-item">
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-text">
+              "The customizable care packages are a game-changer. I could choose
+              exactly the assistance I needed during my travels. Enmove truly
+              understands the needs of its users."
+            </p>
+            <h5 class="card-title">Jane Smith</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more testimonials as needed -->
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#testimonialsCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonialsCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />
+
+<!-- Featured Destinations sections -->
+<section class="container py-5" id="destinations">
+  <h2 class="text-center mb-4 fw-bold">Featured Destinations</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- Destination 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="/images/destination1.jpg"
+          class="card-img-top"
+          alt="Destination 1 Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Paris, France</h5>
+          <p class="card-text">
+            Explore the romantic charm of Paris, with accessible attractions and
+            a vibrant culture.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destination 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="/images/destination2.jpg"
+          class="card-img-top"
+          alt="Destination 2 Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Bournemouth, England</h5>
+          <p class="card-text">
+            Discover the rich history and serene beauty of Bournemouth. It's one
+            of the UK's best seaside resorts, with sandy beaches.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destination 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="/images/destination3.jpg"
+          class="card-img-top"
+          alt="Destination 3 Image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Barcelona, Spain</h5>
+          <p class="card-text">
+            Experience the vibrant energy and architectural wonders of
+            Barcelona, a city full of life.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more destinations as needed -->
+  </div>
+</section>
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />
+<!-- Travel Incentives section -->
+
+<section class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">Exclusive Travel Incentives</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <!-- Incentive 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Off-Peak Discounts</h5>
+          <p class="card-text">
+            Enjoy special discounts when you travel during off-peak seasons,
+            making your journey more affordable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Incentive 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Local Business Partnerships</h5>
+          <p class="card-text">
+            Our partnerships with local businesses offer additional perks, from
+            restaurant discounts to unique experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more incentives as needed -->
+  </div>
+</section>
+<hr class="border border-1 opacity-50" style="color: aqua; margin-top: 0px" />
+<!-- Contact section -->
+<section class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            name="fullName"
+            placeholder="Your Full Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div class="col-md-6 mt-4 mt-md-0">
+      <p class="lead">
+        Have questions or need assistance? Feel free to reach out to us. We're
+        here to help!
+      </p>
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> info@enmove.com</li>
+        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+        <li><strong>Address:</strong> 123 Main Street, Cityville, Country</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- footer section-->
+<%- include('partials/footer'); %>

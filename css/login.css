@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+header {
+    margin-bottom: 5%;
+}
+
+
+.form-container {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10%;
+
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0E5667;
+}
+
+/****************** Form Section ********************/
+
+.label-color {
+    color: #0E5667;
+}
+
+.btn-submit-color {
+    color: #fff;
+    background-color: #0E5667;
+
+}

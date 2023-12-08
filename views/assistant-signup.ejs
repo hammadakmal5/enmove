@@ -1,0 +1,101 @@
+<!-- head section-->
+<%- include('partials/head'); %>
+<!-- navbar section -->
+<%- include('partials/navbar'); %>
+
+<!-- Travel assistant sign up -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Travel Assistant Sign Up</h2>
+  <form action="/assistant" method="POST">
+    <!-- Include form fields for assistant registration -->
+    <div class="mb-3">
+      <label for="assistantName" class="form-label">Full Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assistantName"
+        name="assistantName"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantEmail" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="assistantEmail"
+        name="assistantEmail"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantPassword" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="assistantPassword"
+        name="assistantPassword"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantAddress" class="form-label">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assistantAddress"
+        name="assistantAddress"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantPhoneNumber" class="form-label"
+        >Phone Number (with Country Code)</label
+      >
+      <input
+        type="tel"
+        class="form-control"
+        id="assistantPhoneNumber"
+        name="assistantPhoneNumber"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantCountry" class="form-label">Country</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assistantCountry"
+        name="assistantCountry"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantCity" class="form-label">City</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assistantCity"
+        name="assistantCity"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="assistantPostalCode" class="form-label">Postal Code</label>
+      <input
+        type="text"
+        class="form-control"
+        id="assistantPostalCode"
+        name="assistantPostalCode"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+  <p class="mt-3">
+    Already have an account? <a href="/assistant/login">Log in here</a>.
+  </p>
+</div>
+
+<!-- footer section -->
+<%- include('partials/footer'); %>
